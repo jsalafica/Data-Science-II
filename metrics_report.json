@@ -1,0 +1,33 @@
+{
+  "target": "injury_flag",
+  "num_cols": [
+    "HOUR",
+    "LATITUDE",
+    "LONGITUDE"
+  ],
+  "cat_cols": [
+    "BOROUGH",
+    "VEHICLE TYPE CODE 1",
+    "CONTRIBUTING FACTOR VEHICLE 1"
+  ],
+  "best_lr_params": {
+    "clf__class_weight": "balanced",
+    "clf__C": 3.0
+  },
+  "best_rf_params": {
+    "clf__n_estimators": 180,
+    "clf__min_samples_split": 2,
+    "clf__min_samples_leaf": 2,
+    "clf__max_features": "sqrt",
+    "clf__max_depth": null,
+    "clf__class_weight": "balanced"
+  },
+  "metrics_lr": {
+    "roc_auc": 0.6701139537085565,
+    "pr_auc": 0.46848152769039025
+  },
+  "metrics_rf": {
+    "roc_auc": 0.6692357872900073,
+    "pr_auc": 0.46288008874043146
+  }
+}
